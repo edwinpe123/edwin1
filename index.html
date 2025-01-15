@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>formulario</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <h1 class="h1">Registrate</h1>
+  <hr class="hr">
+<div class="formulario">
+ <form action="">
+    <label  for="email"></label>
+    <input class="controls" type="email" id="email" name="email" placeholder="Correo electronico o Telefono"><br>
+    <label  for="name"></label><br>
+    <input class="controls" type="text" id="name" name="name" placeholder="Nombre completo"><br>
+    <label  for="nombre de usuario"></label><br>
+    <input class="controls" type="text" id="Nombre de usuario" name="nombre de usuario" placeholder="Nombre de usuario"><br><br>
+    <div class="contraseña">
+      <input class="controls" type="password"id="password" placeholder="Contraseña">
+      <span>
+       <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+      </span>
+   </div>
+   <h4 class="date">Fecha de nacimiento</h4>
+    <select class="fecha" aria-label="dia" name="day" id="day" title="dia">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+    </select>
+    <select class="fecha" aria-label="mes" name="month" id="month" title="mes">
+      <option value="ene">ene</option>
+      <option value="feb">feb</option>
+      <option value="mar">mar</option>
+      <option value="abr">abr</option>
+      <option value="may">may</option>
+      <option value="jun">jun</option>
+      <option value="jul">jul</option>
+      <option value="ago">ago</option>
+      <option value="sep">sep</option>
+      <option value="oct">oct</option>
+      <option value="nov">nov</option>
+      <option value="dic">dic</option>  
+    </select>
+    <select class="fecha" aria-label="año" name="year" id="year" title="año">
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+      <option value="2014">2014</option>
+      <option value="2013">2013</option>
+      <option value="2012">2012</option>
+      <option value="2011">2011</option>
+      <option value="2010">210</option>
+      <option value="2009">2009</option>
+      <option value="2008">2008</option>
+      <option value="2007">2007</option>
+      <option value="2006">2006</option>
+      <option value="2005">2005</option>
+      <option value="2004">2004</option>
+      <option value="2003">2003</option>
+      <option value="2002">2002</option>
+      <option value="2001">2001</option>
+      <option value="2000">2000</option>
+    </select>
+    <h3 class="sexo">sexo</h3>
+    <input class="genero" type="radio" id="mujer" name="sexo" value="mujer">
+    <label class="genero" for="mujer">Mujer</label>
+    <input class="genero" type="radio" id="hombre" name="sexo" value="hombre">
+    <label class="genero" for="hombre">Hombre</label>
+    <input class="genero" type="radio" id="indefinido" name="sexo" value="indefinido">
+    <label class="genero" for="indefinido">Indefinido</label><br><br>
+    <input class="bottom" type="submit" value="Regístrate">
+ </form>
+</div>
+  <!-- eye -->
+  <script>
+    var state= false;
+    function toggle(){
+      if(state){
+        document.getElementById("password"). 
+        setAttribute("type","password");
+        document.getElementById(
+          "eye").style.color='#7a797e';
+        
+        state = false;
+      }
+      else{
+        document.getElementById("password"). 
+        setAttribute("type","text");
+        document.getElementById(
+          "eye").style.color='#5887ef';
+        state = true;
+      }
+    }
+  </script>
+</body>
+</html>

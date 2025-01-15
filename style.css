@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+body{
+    background-color:#353232;
+}
+
+
+@media screen and (max-width: 992px) {
+    body{
+       zoom:180%;
+    }
+}
+
+ .formulario{
+    width: 400px; 
+    background: #211F1F;
+    padding: 30px;
+    margin: auto;
+    margin-top: 46px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    margin-bottom: 100px;
+} 
+.input{
+    width: 100%;
+    font-size: 18%;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 3px;
+    font-family: 'poppins', sans-serif;
+    color: #4a4a4a;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 30px rgba(22,89,233,0.4); 
+}
+.h1{
+    font-size: 50px;
+    color: white;
+    padding-top: 100px;
+    line-height: 1px;
+    text-align: center;
+}
+.hr{
+    margin-top: 45px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.controls{
+    width: 100%;
+   background-color: #211F1F;
+   padding: 10px;
+   margin-bottom: 4px;
+   border-radius: 4px;
+   border: 1px solid #00FF00;
+   color: white;
+}
+.date{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 20px;
+}
+.fecha{
+    padding: 5px;
+    margin-bottom: auto;
+    background-color: #211F1F;
+    color: white;
+    width: 30%;
+    margin-right: 5px;
+    border-color: #00FF00;
+    cursor: pointer;
+}
+.sexo{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 20px;
+}
+.genero{
+    cursor: pointer;
+    margin-right: 10px;
+}
+input[type="radio"]{
+    display: none;
+}
+label.genero{
+    position: relative;
+    color: #00FF00;
+    font-family: "poppins",sans-serif;
+    font-size: 13px;
+    border: 2px solid #00FF00;
+    border-radius: 5px;
+    padding: 5px 10px;
+    align-items: center;
+}
+label:before{
+    height: 15px;
+    width: 15px;
+    border: 3px solid #00FF00;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+input[type="radio"]:checked + label{
+    background-color: #00FF00;
+    color: white;
+}
+input[type="radio"]:checked + label:before{
+    height: 0px;
+    width: 0px;
+    border: 10px solid white;
+    background-color: #00FF00;
+}
+ .bottom{
+    margin-top: 25px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 25px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #211F1F;
+    border: 2px solid #069c06;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ .bottom:hover{
+    background-color: #069c06;
+    cursor: pointer;
+ }
+ 
+/* eye */
+::placeholder{
+    color: #9a9a9a;
+    font-weight: 400;
+}
+
+/*Min-width:992px; dispositivos mayores a 1000px como televisores o computadoras*/
+@media screen and (min-width: 992px) {
+    span{
+        position:absolute;
+        left: 820px;
+        transform: translate(0,-50%);
+        top: 419px;
+        cursor: pointer;
+     } 
+}
+
+/*Min-width:992px; dispositivos menores a 1000px como celulares o tablets*/
+@media screen and (max-width: 992px) {
+    span{
+        position:absolute;
+        left: 420px;
+        transform: translate(0,-50%);
+        top: 419px;
+        cursor: pointer;
+     } 
+}
+
+.fa{
+    font-size: 20px;
+    color: #7a797e;
+}
